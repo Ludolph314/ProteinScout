@@ -1,9 +1,9 @@
 # What ProteinScout is
-My bachelor thesis project, a collection of scripts meant for partial automation and streamlining of annotation of unidentified protein sequences acquired through LC/MS-MS method of proteomic analysis. Input data should be two files: 
+My bachelor thesis project, a collection of scripts meant for partial automation and streamlining of annotation process for unidentified protein sequences acquired through LC/MS-MS method of proteomic analysis. Input data should be two files: 
 - a FASTA file with sequences and their IDs
 - a TSV file with LC/MS-MS data processed by Peptide Shaker
 
-ProteinScout is divided into three scripts:
+ProteinScout is divided into three parts:
 - Module 1 formats the input data for better access and further analysis, and performs a search for homologous proteins via protein BLAST in the SwissProt database. At this point, user has to manually input the processed file with protein sequences into the prediction tools web interface (WegoLoc, LOCALIZER, NucPred, CELLO2GO, Protein Cutter), and manually download their results. These results are used by ProteinScout as input files for Module 2 and 3.
 
 - Module 2 merges partial results from the prediction tools together.
