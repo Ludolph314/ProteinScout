@@ -1,5 +1,5 @@
 # What ProteinScout is
-My bachelor thesis project, a collection of scripts meant for partial automation and streamlining of annotation process for unidentified protein sequences acquired through LC/MS-MS method of proteomic analysis. Input data should be two files: 
+My bachelor thesis project, a collection of Biopython and Python scripts meant for partial automation and streamlining of annotation process for unidentified protein sequences acquired through LC/MS-MS method of proteomic analysis. Input data should be two files: 
 - a FASTA file with sequences and their IDs
 - a TSV file with LC/MS-MS data processed by Peptide Shaker
 
