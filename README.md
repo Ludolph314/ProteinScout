@@ -11,7 +11,7 @@ ProteinScout is divided into three parts:
 - Module 3 merges all available data into a final table, calculates SAF and NSAF values and makes a decision (based on the available data) wheter a protein is localized in cell nucleus or not.
 
 # What ProteinScout isn't (yet)
-A program that could fully automate the annotation process from start to end. Due to the fact that the used prediction tools only have a web interface, this would require to incorporate browser automation and data mining, which would take some time (which I currently don't have) and experience in these fields (which I don't have either).
+A program which could fully automate the annotation process from beginning to end. Due to the fact that all used prediction tools only have a web interface, this would require me to use browser automation and data mining, which would take some time (which I currently don't have) and experience in those fields (which I don't have either).
 
 # What ProteinScout isn't (and most definitely never will be)
 An all-purpose universal tool for protein annotation. ProteinScout is very particular about the input file text structure, and won't process data from any other prediction tool. It has been developed for a specific task according to the needs of the Department of Protein Biochemistry and Proteomics at the Center of the region Haná (CRH).
