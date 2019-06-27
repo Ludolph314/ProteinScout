@@ -23,19 +23,19 @@ while True:
 if usrpath[-1:] != '\\':
     usrpath = usrpath+"\\"
 
-extension = '.txt' # povolená přípona 
-toolnames = ['wegoloc', 'localizer', 'nucpred', 'cello2go'] # povolené názvy souborů
+extension = '.txt' # allowed extension
+toolnames = ['wegoloc', 'localizer', 'nucpred', 'cello2go'] # allowed filenames
 for toolname in toolnames:
     try:
-        filenames = [] # inicializace seznamu souborů
-        # Prohledání složky pro všechny soubory s očekávaným formátem názvu (např. result_wegoloc_01.txt)
+        filenames = [] # initialize array of filenames
+        # Search the folder for all files with allowed filenames and extensions (e.g. result_wegoloc_01.txt)
         filenames.extend(glob.glob(usrpath + '*' + 'result_' + toolname + '_'+('[0-9]' * 2)+extension)) 
         if not filenames:
-            print("No result files for %s found!" % (toolname)) # žádný soubor pro daný nástroj nenalezen
+            print("No result files for %s found!" % (toolname)) # no file for the webtool was found
         else:
-            with open('FINAL_'+toolname+extension, 'w') as outfile: # soubory nalezeny, vytvořen výstup
+            with open('FINAL_'+toolname+extension, 'w') as outfile: # files found, output file created
                 for fname in filenames:
-                    with open(fname) as infile: # postupně jsou zapsány všechny nalezené soubory dle pořadí
+                    with open(fname) as infile: # write all found files into the output in the correct order
                         for line in infile:
                             if line.endswith('\n'):
                                 outfile.write(line)
