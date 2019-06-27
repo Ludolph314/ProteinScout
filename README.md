@@ -18,7 +18,7 @@ An all-purpose universal tool for protein annotation. ProteinScout is very parti
 
 More info about the ProteinScout is available in my bachelor thesis (Czech language only), or you can contact me via e-mail.
 
-# Handy links
+# Useful links
 - http://cello.life.nctu.edu.tw/cello2go/
 - http://localizer.csiro.au
 - https://nucpred.bioinfo.se/nucpred/
